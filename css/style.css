@@ -373,6 +373,7 @@ body{
     position: relative;
     bottom: 50px;
     left: 500px;
+	width: 200px;
 }
 p a {
     color: #127ab5;

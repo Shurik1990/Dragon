@@ -1,0 +1,403 @@
+*{ margin: 0; padding: 0; }
+body{
+    background: url('../images/background.png');
+}
+.clear {
+	clear: both;
+	font-size: 0px;
+}
+.header {
+	position: relative;
+	z-index: 1;
+	height: 240px;
+	width: 1040px;
+	margin: 0 auto;
+}
+.header .logo {
+    background: url("../images/logo.png") no-repeat;
+    width: 334px;
+    height: 113px;
+	position: absolute;
+	left: 180px;
+	top: 90px; 
+    z-index: 1;
+}
+.header .image {
+    background: url("../images/logo-image.png");
+    width: 1065px;
+    height: 344px;
+	position: absolute;
+	left: 0;
+	top: 30px; 
+}
+.wrapper {
+    position: relative;
+	z-index: 2;
+	width: 1020px;
+    margin: 0 auto;
+	padding: 20px 0;
+	background: #fff;
+	border-radius: 8px 8px 8px 8px;
+}
+.sidebar {
+	float:left;
+	width:247px;
+}
+.menu {
+	list-style: none;
+    margin-left: 25px;
+}
+.menu h2 {
+    text-align: center;
+	height: 30px;
+	line-height: 30px;
+	color: #000;
+	font-size: 20px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 700;
+    margin-bottom: 10px;
+}
+.menu li {
+	height: 52px;
+	padding: 0 0 4px 0;
+}
+.menu li a {
+	overflow: hidden;
+	height: 52px;
+	line-height: 52px;
+	display: block;
+	padding: 0 10px 0 60px;
+	font-size: 13px;
+	color: #fff;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 500;
+	text-decoration: none;
+	background: url("../images/left-link.png") left top no-repeat;
+	border-radius: 5px 5px 5px 5px;
+}
+.menu li a:hover, .menu li a.active {
+	background: url("../images/left-link.png") left bottom no-repeat;
+}
+.menu img {
+    display: inline-block;
+	margin: 0 10px -7px 0;
+}
+.main {
+	float: left;
+	width: 743px;
+	padding: 0 0 0 30px;
+}
+.banner {
+    position: relative;
+    width: 678px;
+    height: 200px;
+    left: 0px;
+    bottom: 5px;
+    margin-bottom: 20px;
+}
+.popular-games {
+	border-radius: 0 8px 8px 0;
+    margin-left: 60px;
+    margin-bottom: 40px;
+}
+.popular-games-title {
+    text-indent: -55px;
+    text-align: center;
+	height: 30px;
+	line-height: 30px;
+	color: #000;
+	font-size: 18px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 700;
+}
+.popular-link {
+	display: inline-block;
+	padding: 10px 20px;
+	text-align: center;
+	font-size: 14px;
+	color: #2182b9;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 700;
+}
+.popular-link img {
+	display: block;
+	margin: 0 auto 7px auto;
+	border-radius: 5px;
+}
+.popular-link:hover {
+	background: #cdcdcd;
+	color: #000;
+	text-decoration: none;
+}
+.game-page {
+	float: left;
+	width: 202px;
+	height: 260px;
+	border: #fff solid 2px;
+	border-radius: 8px;
+	margin: 0 25px 21px 0;
+}
+.card-page {
+	width: 200px;
+	height: 258px;
+	border: #ececec solid 1px;
+	border-radius: 8px;
+}
+.card-link-page {
+	display: block;
+	text-align: center;
+	font-size: 9px;
+	color: #2182b9;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 700;
+    padding-bottom: 5px;
+}
+.card-link-page h2 {
+    padding: 0 20px;
+}
+.card-link-page img {
+	display: block;
+	margin: 0 auto 7px auto;
+	border-radius: 5px 5px 0 0;
+}
+.raiting-page {
+	text-align: center;
+}
+.stars-page {
+	padding: 5px 0 0 0;
+	display: inline-block;
+}
+.game-page:hover {
+	box-shadow:0px 0px 10px rgba(0,0,0,0.5);
+}
+.game-page:hover .card-page {
+	background: #626262;
+	border: #fff solid 1px;
+}
+.game-page:hover .card-link-page {
+	color: #fff;
+    text-decoration: none;
+}
+.settings {
+    position: relative;
+    width: 712px;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.like {
+    padding-top: 5px;
+    float: left;
+}
+.share {
+    display: inline-block;
+    vertical-align: middle;
+}
+.share a {
+    padding-right: 10px;
+}
+.settings .fullscreen {
+    float: right;
+    padding-top: 5px;
+    margin-right: 60px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.settings .fullscreen:hover {
+    transform: scale(1.2);
+}
+.settings .error {
+    float: right;
+    margin-right: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+	font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    background: #0873b3;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+.settings .error:hover {
+    background: #f00;
+}
+.game-window {
+    position: relative;
+    text-align: left;
+    padding-bottom: 20px;
+}
+.game-window p {
+    padding-top: 20px;
+}
+.game-page-title {
+    text-align: left;
+	height: 30px;
+	line-height: 30px;
+	color: #000;
+	font-size: 20px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 700;
+    margin-bottom: 20px;
+}
+.game {
+	float: left;
+	width: 202px;
+	height: 360px;
+	border: #fff solid 2px;
+	border-radius: 8px;
+	margin: 0 25px 21px 0;
+}
+.card {
+	width: 200px;
+	height: 358px;
+	border: #ececec solid 1px;
+	border-radius: 8px;
+}
+.card-link {
+	display: block;
+	text-align: center;
+	font-size: 9px;
+	color: #2182b9;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 700;
+    padding-bottom: 5px;
+}
+.card-link h2 {
+    padding: 0 20px;
+}
+.card-link img {
+	display: block;
+	margin: 0 auto 7px auto;
+	border-radius: 5px 5px 0 0;
+}
+.raiting {
+	text-align: center;
+}
+.stars {
+	padding: 5px 0 0 0;
+	display: inline-block;
+}
+.article {
+	padding: 3px 20px 0 20px;
+	color: #000;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 11px;
+	line-height: 20px;
+    font-weight: 800;
+}
+.game:hover {
+	box-shadow:0px 0px 10px rgba(0,0,0,0.5);
+}
+.game:hover .card {
+	background: #626262;
+	border: #fff solid 1px;
+}
+.game:hover .card-link {
+	color: #fff;
+    text-decoration: none;
+}
+.game:hover .article {
+	color: #fff;
+}
+.buttons {
+	text-align: center;
+	width: 716px;
+}
+.buttons a {
+	text-align: center;
+	display: inline-block;
+	width: 40px;
+	height: 48px;
+	line-height: 48px;
+	margin-right: 10px;
+	background: url("../images/buttons.png") right top no-repeat;
+	color: #127ab5;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	text-decoration: none;
+	border-radius: 24px;
+}
+.buttons a:hover, .buttons a.active {
+	background: url("../images/buttons.png") left top no-repeat;
+	color: #fff;
+}
+.section {
+	padding: 60px 0;
+	width: 716px;
+}
+.section-page {
+    padding: 0px 0;
+    width: 716px;
+}
+.text-image {
+    position: relative;
+    float: left;
+    padding-right: 30px;
+    padding-bottom: 15px;
+}
+.section h1 {
+    color: #000;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 18px;
+    font-weight: 700;
+    padding-left: 20px;
+}
+.section-page h1 {
+    color: #000;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.section p {
+	color: #000;
+	font-family: 'PT Sans Condensed', sans-serif;
+	font-size: 14px;
+    font-weight: 500;
+    padding-top: 20px;
+    line-height: 1.5;
+}
+.section-page p {
+	color: #000;
+	font-family: 'PT Sans Condensed', sans-serif;
+	font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    padding-bottom: 20px;
+}
+.section-vote {
+    position: relative;
+    bottom: 50px;
+    left: 500px;
+}
+p a {
+    color: #127ab5;
+}
+.footer {
+    position: relative;
+    width: 1040px;
+    font-family: 'PT Sans', sans-serif;
+	font-size: 14px;
+    font-weight: 500;
+	color: #fff;
+	height: 90px;
+	line-height: 90px;
+    margin: 0 auto;
+}
+.footer .www {
+    color: #fff;
+    position: absolute;
+    left: 30px;
+}
+.www:hover{
+    color: #000;
+}
+.footer .copyright {
+    position: absolute;
+    right: 30px;
+}
+
